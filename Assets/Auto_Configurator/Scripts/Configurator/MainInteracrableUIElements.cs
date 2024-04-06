@@ -30,7 +30,7 @@ public class MainInteractableUIElements : MonoBehaviour
     public void Initialize(Configurator configurator)
     {
         _configurator = configurator;
-        LoadConfig(); // TUT
+        LoadConfig();
         _resetButton.onClick.AddListener(ResetButtonClicked);
         _spoilerCheckbox.isOn = _config.spoiler;
         if (_changeColorButton.Length >= 4)
@@ -130,7 +130,7 @@ public class MainInteractableUIElements : MonoBehaviour
         {
             if (selectable is Toggle toggle && !toggle.isOn)
             {
-                number = 0; // Если переключатель не включен, стоимость должна быть 0
+                number = 0;
             }
 
             _totalCostValue = _totalCostValue - previousCost + number;

@@ -41,7 +41,7 @@ public class Configurator : MonoBehaviour
     /// <param name="colorMaterial">The material to use for the car color.</param>
     public void ChangeCarColor(Material colorMaterial)
     {
-        _carSubject.ChangeCarColor(colorMaterial); // TUT
+        _carSubject.ChangeCarColor(colorMaterial);
         CurrentColor = colorMaterial;
     }
 

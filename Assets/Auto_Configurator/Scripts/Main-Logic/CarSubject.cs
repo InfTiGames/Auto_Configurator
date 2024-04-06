@@ -20,7 +20,7 @@ public class CarSubject : MonoBehaviour
     public void ChangeCarColor(Material colorMaterial)
     {
         foreach (var material in _carBody.materials)
-            material.color = colorMaterial.color; // TUT
+            material.color = colorMaterial.color;
     }
 
     public void ChangeWheelType(int index)

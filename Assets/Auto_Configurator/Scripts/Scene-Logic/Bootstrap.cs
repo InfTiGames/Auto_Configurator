@@ -20,7 +20,7 @@ public class Bootstrap : MonoBehaviour
 
     private void Awake()
     {
-        InitializeComponents(); // tyt
+        InitializeComponents();
     }
 
     private void InitializeComponents()
@@ -38,6 +38,6 @@ public class Bootstrap : MonoBehaviour
         _userMovement.Initialize(_userObserver, _surfaceToMove, _mousePositionListener);
         _uIManager.Initialize(_carSubject, _uIAnimation);
         _configurator.Initialize(_carSubject);
-        _mainInteractableUIElements.Initialize(_configurator); // TUT
+        _mainInteractableUIElements.Initialize(_configurator);
     }
 }
